@@ -81,7 +81,7 @@ int test(int n)
 		break;
 	}
 
-	///加法操作不够减的时候，交换两个操作数
+	///减法操作不够减的时候，交换两个操作数
 	for (i = 1;i <= count;i++)
 	{
 		if ((operation == '-') && (num1<num2))
@@ -91,7 +91,7 @@ int test(int n)
 			num2[i] = t;
 		}
 
-		///出发操作中，除数，即num2为0时就将num2强制置为1
+		///除法操作中，除数，即num2为0时就将num2强制置为1
 		///将num1的值赋值给num1*num2，防止不能整除
 		if (operation == '/')
 		{
